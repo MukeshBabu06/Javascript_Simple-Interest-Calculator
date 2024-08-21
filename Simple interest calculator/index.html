@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Calculator-icon.png">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Simple Interest Calculator</h1>
+            <div class="container1">
+                <div class="input">
+                    <form action="" id="InterestCalculator">
+                        <div class="inco">
+                            <label for="Principle">Principle Amount (₹):</label>
+                            <input type="number" id="Principle" name="Principle" placeholder="Your investment amount"
+                                required>
+                        </div>
+                        <div class="inco">
+                            <label for="Interest">Annual Interest Rate (%):</label>
+                            <input type="number" id="Interest" name="Interest" required
+                                placeholder="Your interest rate">
+                        </div>
+                        <div class="inco">
+                            <label for="Years">Number of Years:</label>
+                            <input type="number" id="Years" maxlength="24" required placeholder="Total years">
+                            <!-- <input type="range" name="Years" id="Years" list="selyear" value="1" step="1" min="1" max="30" required>
+                <datalist id="selyear">
+                    <option value="5"></option>
+                    <option value="10"></option>
+                    <option value="15"></option>
+                    <option value="20"></option>
+                    <option value="25"></option>
+                  </datalist> -->
+                        </div>
+                        <div>
+                            <button type="button" onclick="calcint()">Calculate</button>
+                            <button type="button" onclick="reset()">Reset</button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="output">
+                    <p>Principle amount</p>
+                    <p id="firstamount" class="res">₹ 0</p>
+                    <p>Total interest</p>
+                    <p id="TotInt" class="res">₹ 0</p>
+                    <p>Total amount</p>
+                    <p id="TotAmt" class="res">₹ 0</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div>
+                <p>Gains accrued against accumulated interest is how investments made under a scheme are calculated.
+                    These
+                    profits are accrued as simple or compound interest. Interest is computed based on the initial
+                    principle.
+                    <br> <br>
+                    It's crucial to figure out how much you will acquire depending on interest after a specific amount
+                    of
+                    time. You can use a simple interest calculator if the money in your investment is accumulated using
+                    simple interest. You may quickly determine how much money you will be able to accumulate overall at
+                    adulthood with the use of these calculators.
+                </p>
+            </div>
+
+            <h2>Simple Interest Formula</h2>
+            <div>
+                <h3>To calculate Total Maturity Amount Value:</h3>
+                <p>The following represents the calculator's simple interest formula, which is used to determine the
+                    total
+                    gains accrued:</p>
+
+                <h3>A = P(1 + rt)</h3>
+
+                <p>The total cumulative amount (principal plus interest) is denoted by A. <br>
+                    P stands for the Principal Amount. <br>
+                    The decimal representation of the Rate of Interest is denoted by r <br>time period (months or years)
+                    is
+                    represented by t = R/100.</p>
+
+                <h3>To calculate the Interest on the Investments and loans</h3>
+                <h3>SI= P X RX T/100</h3>
+
+                <p>The following are represented by the variables in it: </p>
+
+                <table border="1px">
+
+                    <tr>
+                        <td>SI</td>
+                        <td>Simple Interest</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>Rate of interest</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>Time</td>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>Principal</td>
+                    </tr>
+                </table>
+
+                <p>
+                    This formula can be used by the SI calculator to quickly calculate interest rates and estimate the
+                    growth in the initial investment's value. Let's use an example to better comprehend it.
+
+                    <br>
+                    <br>
+                    For nearly two years, the investor has invested Rs. 15,000 at a 5% interest rate. His SI will
+                    therefore be computed as follows: Rs. (15000 X 5 X 2/100), or Rs. 16500.
+                </p>
+
+                <h3>What is the Simple Interest Formula and when is it Used?</h3>
+                <p>The amount one needs to pay or receive after a certain tenure base based on the interest can be
+                    calculated using the Simple Interest Formula. It is the best and simple method of calculating
+                    interest on the principal amount and should be used:
+                <ul>
+                    <li>When one has borrowed money: To repay extra payment of interest along with the borrowed amount.
+                        The formula for simple interest can help to calculate the borrowing cost as Interest.</li>
+                    <li>When someone lends money: If someone has given money to someone to earn Interest Income in
+                        exchange. By using the Simple Interest formula, one can easily get the extra income figure as
+                        the Interest.</li>
+                    <li>When someone has invested money: If someone has invested their surplus money in deposits such as
+                        FD, RD or savings schemes like SSY, PPF or others, can also calculate the Interest Income with a
+                        simple interest calculator.</li>
+                </ul>
+                </p>
+                <h3>How to Calculate Simple Interest using Calculator?</h3>
+                <p>A basic interest EMI calculator is the sole choice for people who are unclear about the profits they
+                    will earn at the end of the maturity period. The outcome will be calculated in a matter of seconds
+                    once you enter the principal, rate, and time value. </p>
+
+                <h3>How can Simple Interest Calculator help you?</h3>
+                <p>It is thought to be the greatest computer tool for calculating the worth of financial gain over the
+                    course of an investment. Users will be aware of the interest rate they will get. Recently, there has
+                    been a rise in demand for a basic interest rate calculator due to its accuracy and simplicity. When
+                    figuring up a basic interest rate, the principal amount stays the same. This shows that interest is
+                    charged on the principal, which stays the same for each subsequent tenure.
+                <ul>
+                    <li>This simple interest calculator offers you output by calculating both principals as well as
+                        interest.</li>
+                    <li>Although it is easy to calculate simple interest for shorter tenors but for long consecutive
+                        years, a manual mechanism increases the chances of mistakes. So, use an online simple interest
+                        calculator</li>
+                    <li>Quick and easy way to gain insight into interest as well as the increase in the invested
+                        capital.</li>
+                </ul>
+                </p>
+
+                <h3>Advantages of using Simple Interest Calculators</h3>
+                <p>There are times when borrowers, depending on the manual method, people pay unpaid interest before
+                    principal. This situation leads to issues during computing simple interest on an amount. Following
+                    are some of the advantages of switching to an online calculator from the manual method.
+                <ul>
+                    <li>SI is computed irrespective of any unit. Be it dollar, euro or any other currency, it calculates
+                        effectively.</li>
+                    <li>Users who intend to save time on calculating interest rates with changing years can save their
+                        time with its judicious use.</li>
+                    <li>Numerous variables are available to help you gauge your total investment. So, knowing about the
+                        total return and maturity time helps you to take viable decisions.</li>
+                    <li>A simple interest loan calculator helps in determining the current value of money.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy2024 | Design by Mukesh | All Right Reserved.</p>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+
+</html>
